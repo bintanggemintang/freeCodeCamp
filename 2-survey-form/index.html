@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Build a Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<body>
+  <main>
+    <h1 id="title">Audio Hobbyist Taiwan Form</h1>
+    <div id="insider">
+      
+      <p id="description">Dear fellow <i>Audio Hobbyist Taiwan,</i> welcome to our survey form! Please fill in the information below to support our database.</p>
+      <form id="survey-form">
+        <div class="form-rows">
+          <div class="labels">
+            <label for="name" id="name-label">Name</label>
+          </div>
+          <input type="text" id="name" name="name" class="input-fields" placeholder="Enter your name here" required></input>
+        </div>
+        <div class="form-rows">
+          <div class="labels">
+            <label for="email" id="email-label">Email</label>
+          </div>
+          <div class="fields">
+            <input type="email" id="email" name="email" class="input-fields" placeholder="Enter your email here" required></input>
+          </div>
+        </div>
+        <div class="form-rows">
+          <div class="labels">
+            <label for="number" id="number-label">Age</label>
+          </div>
+          <div class="fields">
+            <input type="number" id="number" name="number" class="input-fields" placeholder="Enter your age here" min="1" max="99" required></input>
+          </div>
+        </div>
+        <div class="form-rows">
+          <div class="labels">
+            <label for="dropdown" id="dropdown" >Gender</label>
+          </div>
+          <div class="fields">
+            <select id="dropdown" class="dropdown">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-rows">
+          <div class="labels">
+            <label for="question" id="question">Are you interested to attend the annual gathering?</label>
+          </div>
+          <div class="fields">
+            <input id="question" type="radio" id="yes" name="answer" value="yes" class="user-select">
+            <label for="question">Yes</label>
+            <br>
+            <input id="question" type="radio" id="no" name="answer" value="no" class="user-select">
+            <label for="question">No</label>
+          </div>
+        </div>
+        <div class="form-rows">
+          <div class="labels">
+            <label for="equipment">Audio equipment you have:</label>
+          </div>
+          <div class="fields">
+            <input id="checkbox" type="checkbox" name="equipment" value="Headphone" class="user-select">
+            <label id="checkbox">Headphone</label>
+            <br>
+            <input id="checkbox" type="checkbox" name="equipment" value="In-Ear Monitor" class="user-select">
+            <label id="checkbox">In-Ear Monitor</label>
+            <br>
+            <input id="checkbox" type="checkbox" name="equipment" value="Earbud" class="user-select">
+            <label id="checkbox">Earbud</label>
+            <br>
+            <input id="checkbox" type="checkbox" name="equipment" value="Speaker" class="user-select">
+            <label id="checkbox">Speaker</label>
+          </div>
+        </div>
+        <div class="form-rows">
+          <div class="labels">
+            <label for="textarea">Additional Comments:</label>
+          </div>
+          <div class="fields">
+            <textarea id="textarea" name="comments" class="input-fields"  placeholder="Enter your additional comment here"></textarea>
+          </div>
+          <button class="button" id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </main>
+<body>
+<!-- partial -->
+  
+</body>
+</html>
